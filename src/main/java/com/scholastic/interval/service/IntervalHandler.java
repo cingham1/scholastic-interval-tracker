@@ -31,7 +31,7 @@ public class IntervalHandler {
             if (overlapList.size() > 0) {
                 // get the lowest start and highest end values from all the overlaps
                 Interval lowestStartInterval = Collections.min(overlapList,
-                        (o1, o2) -> (int)(o2.getStart() - o1.getStart()));
+                        (o1, o2) -> (int)(o1.getStart() - o2.getStart()));
                 Interval highestEndInterval = Collections.max(overlapList,
                         (o1, o2) -> (int)(o1.getEnd() - o2.getEnd()));
 

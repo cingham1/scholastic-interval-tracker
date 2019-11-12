@@ -83,8 +83,8 @@ class IntervalHandlerSpec extends Specification {
 			List<Interval> list = dto.getIntervals()
 		then:
 			list.size() == expectedResultsList.size()
-			for (Interval interval : expectedResultsList) {
-				list.contains(interval)
+			expectedResultsList.every {
+				list.contains(it)
 			}
 	}
 
@@ -110,8 +110,8 @@ class IntervalHandlerSpec extends Specification {
 			List<Interval> list = dto.getIntervals()
 		then:
 			list.size() == expectedResultsList.size()
-			for (Interval interval : expectedResultsList) {
-				list.contains(interval)
+			expectedResultsList.every {
+				list.contains(it)
 			}
 	}
 
@@ -137,8 +137,8 @@ class IntervalHandlerSpec extends Specification {
 			List<Interval> list = dto.getIntervals()
 		then:
 			list.size() == expectedResultsList.size()
-			for (Interval interval : expectedResultsList) {
-				list.contains(interval)
+			expectedResultsList.every {
+				list.contains(it)
 			}
 	}
 
@@ -156,7 +156,7 @@ class IntervalHandlerSpec extends Specification {
 					new Interval(80, 90))	// no overlap
 
 			List<Interval> expectedResultsList = Arrays.asList(
-					new Interval(10, 55),
+					new Interval(10, 60),
 					new Interval(80, 90))
 		when:
 			handler.add(documentId, new IntervalDto(startingStateList))
@@ -165,8 +165,8 @@ class IntervalHandlerSpec extends Specification {
 			List<Interval> list = dto.getIntervals()
 		then:
 			list.size() == expectedResultsList.size()
-			for (Interval interval : expectedResultsList) {
-				list.contains(interval)
+			expectedResultsList.every {
+				list.contains(it)
 			}
 	}
 
@@ -184,7 +184,7 @@ class IntervalHandlerSpec extends Specification {
 
 			List<Interval> expectedResultsList = Arrays.asList(
 					new Interval(10, 25),
-					new Interval(35, 50));
+					new Interval(35, 50))
 		when:
 			handler.add(documentId, new IntervalDto(startingStateList))
 			handler.add(documentId, new IntervalDto(newInputList))
@@ -192,8 +192,8 @@ class IntervalHandlerSpec extends Specification {
 			List<Interval> list = dto.getIntervals()
 		then:
 			list.size() == expectedResultsList.size()
-			for (Interval interval : expectedResultsList) {
-				list.contains(interval)
+			expectedResultsList.every {
+				list.contains(it)
 			}
 	}
 
