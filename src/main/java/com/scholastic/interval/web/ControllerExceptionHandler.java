@@ -1,14 +1,12 @@
-package com.scholastic.test.web;
+package com.scholastic.interval.web;
 
-import com.scholastic.test.dto.ServerResponseDto;
+import com.scholastic.interval.dto.ServerResponseDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
-
-import java.util.NoSuchElementException;
 
 /**
  * Handle any Exception encountered during controller processing

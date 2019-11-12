@@ -1,4 +1,4 @@
-package com.scholastic.test.dto;
+package com.scholastic.interval.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

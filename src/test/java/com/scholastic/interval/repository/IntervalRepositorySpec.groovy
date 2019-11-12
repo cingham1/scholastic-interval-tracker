@@ -1,6 +1,6 @@
-package com.scholastic.test.repository
+package com.scholastic.interval.repository
 
-import com.scholastic.test.domain.Interval
+import com.scholastic.interval.domain.Interval
 import spock.lang.Specification
 import spock.lang.Subject
 

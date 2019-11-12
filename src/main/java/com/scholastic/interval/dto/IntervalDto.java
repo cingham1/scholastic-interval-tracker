@@ -1,6 +1,6 @@
-package com.scholastic.test.dto;
+package com.scholastic.interval.dto;
 
-import com.scholastic.test.domain.Interval;
+import com.scholastic.interval.domain.Interval;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

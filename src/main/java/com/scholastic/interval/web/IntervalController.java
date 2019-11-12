@@ -1,9 +1,9 @@
-package com.scholastic.test.web;
+package com.scholastic.interval.web;
 
-import com.scholastic.test.dto.HelloDto;
-import com.scholastic.test.dto.IntervalDto;
-import com.scholastic.test.dto.ServerResponseDto;
-import com.scholastic.test.service.IntervalHandler;
+import com.scholastic.interval.dto.HelloDto;
+import com.scholastic.interval.dto.IntervalDto;
+import com.scholastic.interval.dto.ServerResponseDto;
+import com.scholastic.interval.service.IntervalHandler;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 

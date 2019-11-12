@@ -1,8 +1,8 @@
-package com.scholastic.test.service;
+package com.scholastic.interval.service;
 
-import com.scholastic.test.domain.Interval;
-import com.scholastic.test.dto.IntervalDto;
-import com.scholastic.test.repository.IntervalRepository;
+import com.scholastic.interval.domain.Interval;
+import com.scholastic.interval.dto.IntervalDto;
+import com.scholastic.interval.repository.IntervalRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

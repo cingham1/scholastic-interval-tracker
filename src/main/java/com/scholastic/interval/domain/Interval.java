@@ -1,4 +1,4 @@
-package com.scholastic.test.domain;
+package com.scholastic.interval.domain;
 
 import lombok.*;
 

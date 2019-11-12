@@ -1,6 +1,6 @@
-package com.scholastic.test.web
+package com.scholastic.interval.web
 
-import com.scholastic.test.dto.ServerResponseDto
+import com.scholastic.interval.dto.ServerResponseDto
 import spock.lang.Specification
 import spock.lang.Subject
 
